@@ -19,25 +19,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
-      <html
-        lang="en"
-        suppressHydrationWarning
-        className={`dark ${inter.className} h-full antialiased`}
-      >
-        <head />
-        <body>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Navbar />
-            {children}
-          </ThemeProvider>
-        </body>
-      </html>
-    </>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${inter.className} h-full antialiased`}
+    >
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
   );
 }

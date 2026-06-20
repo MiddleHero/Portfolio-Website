@@ -25,7 +25,7 @@ export default function Home() {
             </a>
             <Separator orientation="vertical" />
             <a
-              href="https://github.com/MiddleHero"
+              href="https://www.linkedin.com/in/tadian-dang-b02b27384/?trk=public-profile-join-page"
               className="flex gap-1 items-center hover:text-primary hover:text-xl transition-all duration-400y"
             >
               <FaLinkedin />
@@ -33,7 +33,7 @@ export default function Home() {
             </a>
             <Separator orientation="vertical" />
             <a
-              href="https://github.com/MiddleHero"
+              href="https://www.youtube.com/@MiddleHero15"
               className="flex gap-1 items-center hover:text-primary hover:text-xl transition-all duration-400"
             >
               <FaYoutube />
@@ -41,7 +41,7 @@ export default function Home() {
             </a>
             <Separator orientation="vertical" />
             <a
-              href="https://github.com/MiddleHero"
+              href="https://open.spotify.com/user/zx4msbxqe7jxealjxnrdaqoqo?si=426eacc2f290486f"
               className="flex gap-1 items-center hover:text-primary hover:text-xl transition-all duration-400"
             >
               <FaSpotify />
@@ -49,7 +49,7 @@ export default function Home() {
             </a>
             <Separator orientation="vertical" />
             <a
-              href="https://github.com/MiddleHero"
+              href="mailto:dangtadian@gmail.com"
               className="flex gap-1 items-center hover:text-primary hover:text-xl transition-all duration-400"
             >
               <MdEmail />
