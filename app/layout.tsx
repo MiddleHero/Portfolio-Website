@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import { Inter } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,12 +19,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`dark ${inter.className} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">
-        {" "}
-        <Navbar></Navbar>
-        {children}
-      </body>
-    </html>
+    <>
+      <html
+        lang="en"
+        suppressHydrationWarning
+        className={`dark ${inter.className} h-full antialiased`}
+      >
+        <head />
+        <body>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Navbar />
+            {children}
+          </ThemeProvider>
+        </body>
+      </html>
+    </>
   );
 }
