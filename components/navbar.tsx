@@ -22,28 +22,44 @@ export default function Navbar() {
         <div className="flex items-center gap-2 text-secondary font-bold relative">
           <Button
             variant={pathname === "/" ? "secondary" : "ghost"}
-            className="hover:text-white px-3 py-3"
+            className={
+              pathname === "/"
+                ? "bg-primary text-primary-foreground"
+                : "hover:text-primary px-3 py-3"
+            }
             asChild
           >
             <Link href={"/"}>Home</Link>
           </Button>
           <Button
             variant={pathname === "/about" ? "secondary" : "ghost"}
-            className="hover:text-white px-3 py-3"
+            className={
+              pathname === "/about"
+                ? "bg-primary text-primary-foreground"
+                : "hover:text-primary px-3 py-3"
+            }
             asChild
           >
             <Link href={"/about"}>About</Link>
           </Button>
           <Button
             variant={pathname === "/projects" ? "secondary" : "ghost"}
-            className="hover:text-white px-3 py-3"
+            className={
+              pathname === "/projects"
+                ? "bg-primary text-primary-foreground"
+                : "hover:text-primary px-3 py-3"
+            }
             asChild
           >
             <Link href={"/projects"}>Projects</Link>
           </Button>
           <Button
             variant={pathname === "/contact" ? "secondary" : "ghost"}
-            className="hover:text-white px-3 py-3"
+            className={
+              pathname === "/contact"
+                ? "bg-primary text-primary-foreground"
+                : "hover:text-primary px-3 py-3"
+            }
             asChild
           >
             <Link href={"/contact"}>Contact</Link>
