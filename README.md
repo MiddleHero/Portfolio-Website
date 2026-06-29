@@ -4,6 +4,7 @@ A Place Where I Can Showcase My Projects as well as information about myseslf.
 Made Using Nextjs and Shadcn
 
 To Do List:
+Add Animations
 Add Project Cards
 Add Spotify Widgets
 Add Cal.com Widget
