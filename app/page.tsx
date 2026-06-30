@@ -63,37 +63,39 @@ export default function Home() {
           </h3>
 
           <div className="grid grid-cols-2 gap-5">
-            <div className="w-full max-w-lg rounded-xl border-2 border-foreground overflow-hidden">
+            <div className="group w-full max-w-lg rounded-xl border-2 border-secondary  hover:border-primary  overflow-hidden cursor-pointer">
               <Image
                 src="/placeholderimage.png"
                 width={500}
                 height={300}
                 alt="placeholder"
-                className="w-full h-65 object-cover transition-transform hover:scale-105 duration-300"
+                className="w-full h-65 object-cover transition-transform duration-300 group-hover:scale-105"
               />
 
-              <div className="px-5 py-3 space-y-2">
-                <h1 className="text-xl font-semibold">Portfolio Project 1</h1>
-                <p className="text-muted-foreground">
+              <div className="px-5 py-3 space-y-2 transition-colors duration-300 group-hover:text-primary">
+                <h1 className="text-xl font-semibold text-muted-foreground group-hover:text-primary">
+                  Portfolio Project 1
+                </h1>
+                <p className="text-secondary">
                   A Reddit clone built with Next.js, Prisma, Neon, and
                   PostgreSQL.
                 </p>
               </div>
             </div>
-            <div className="w-full max-w-lg rounded-xl border-2 border-foreground overflow-hidden">
+            <div className="group w-full max-w-lg rounded-xl border-2 border-secondary hover:border-primary overflow-hidden cursor-pointer">
               <Image
                 src="/placeholderimage.png"
                 width={500}
                 height={300}
                 alt="placeholder"
-                className="w-full h-65 object-cover transition-transform group-hover:scale-105 duration-300"
+                className="w-full h-65 object-cover transition-transform duration-300 group-hover:scale-105"
               />
 
-              <div className="px-5 py-3 space-y-2">
-                <h1 className="text-xl font-semibold text-secondary">
+              <div className="px-5 py-3 space-y-2 transition-colors duration-300 group-hover:text-primary">
+                <h1 className="text-xl font-semibold text-muted-foreground group-hover:text-primary">
                   Portfolio Project 2
                 </h1>
-                <p className="text-muted-foreground">
+                <p className="text-secondary">
                   A Reddit clone built with Next.js, Prisma, Neon, and
                   PostgreSQL.
                 </p>
