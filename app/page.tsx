@@ -57,10 +57,49 @@ export default function Home() {
             </a>
           </div>
         </section>
-        <section>
+        <section className="container space-y-5">
           <h3 className="flex items-center gap-2 text-xl font-bold">
             <CiStar className="text-2xl" /> Featured Projects
           </h3>
+
+          <div className="grid grid-cols-2 gap-5">
+            <div className="w-full max-w-lg rounded-xl border-2 border-foreground overflow-hidden">
+              <Image
+                src="/placeholderimage.png"
+                width={500}
+                height={300}
+                alt="placeholder"
+                className="w-full h-65 object-cover transition-transform hover:scale-105 duration-300"
+              />
+
+              <div className="px-5 py-3 space-y-2">
+                <h1 className="text-xl font-semibold">Portfolio Project 1</h1>
+                <p className="text-muted-foreground">
+                  A Reddit clone built with Next.js, Prisma, Neon, and
+                  PostgreSQL.
+                </p>
+              </div>
+            </div>
+            <div className="w-full max-w-lg rounded-xl border-2 border-foreground overflow-hidden">
+              <Image
+                src="/placeholderimage.png"
+                width={500}
+                height={300}
+                alt="placeholder"
+                className="w-full h-65 object-cover transition-transform group-hover:scale-105 duration-300"
+              />
+
+              <div className="px-5 py-3 space-y-2">
+                <h1 className="text-xl font-semibold text-secondary">
+                  Portfolio Project 2
+                </h1>
+                <p className="text-muted-foreground">
+                  A Reddit clone built with Next.js, Prisma, Neon, and
+                  PostgreSQL.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
