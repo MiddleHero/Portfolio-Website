@@ -38,7 +38,7 @@ export default function Home() {
             <Separator orientation="vertical" />
             <a
               href="https://www.linkedin.com/in/tadian-dang-b02b27384/?trk=public-profile-join-page"
-              className="flex gap-1 items-center hover:text-primary hover:text-xl transition-all duration-400y"
+              className="flex gap-1 items-center hover:text-primary hover:text-xl transition-all duration-400"
             >
               <FaLinkedin />
               Linkedin
@@ -75,12 +75,13 @@ export default function Home() {
           </h3>
 
           <div className="grid grid-cols-2 gap-5">
-            <div className="group w-full max-w-lg rounded-xl border-2 border-secondary  hover:border-primary  overflow-hidden cursor-pointer">
+            <div className="group w-full max-w-lg rounded-xl border-2 border-border hover:border-primary  overflow-hidden cursor-pointer bg-muted ">
               <Image
                 src="/placeholderimage.png"
                 width={500}
                 height={300}
                 alt="placeholder"
+                loading="eager"
                 className="w-full h-65 object-cover transition-transform duration-300 group-hover:scale-105"
               />
 
@@ -94,12 +95,13 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="group w-full max-w-lg rounded-xl border-2 border-secondary hover:border-primary overflow-hidden cursor-pointer">
+            <div className="group w-full max-w-lg rounded-xl border-2 border-border hover:border-primary overflow-hidden cursor-pointer bg-muted">
               <Image
                 src="/placeholderimage.png"
                 width={500}
                 height={300}
                 alt="placeholder"
+                loading="eager"
                 className="w-full h-65 object-cover transition-transform duration-300 group-hover:scale-105"
               />
 
