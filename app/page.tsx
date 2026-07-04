@@ -5,6 +5,8 @@ import { FaGithub, FaLinkedin, FaSpotify, FaYoutube } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { CiStar } from "react-icons/ci";
 import { Typewriter } from "react-simple-typewriter";
+import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 export default function Home() {
   return (
     <div className="flex-1 px-0 py-7 md:px-5">
@@ -70,9 +72,22 @@ export default function Home() {
           </div>
         </section>
         <section className="container space-y-5">
-          <h3 className="flex items-center gap-2 text-xl font-bold">
-            <CiStar className="text-2xl" /> Featured Projects
-          </h3>
+          <div className="flex items-center justify-between">
+            <h3 className="flex items-center gap-2 text-xl font-bold">
+              <CiStar className="text-2xl" />
+              Featured Projects
+            </h3>
+
+            <Link
+              href="/projects"
+              className="group inline-flex items-center gap-1 px-2 py-1 text-sm rounded-md text-primary hover:bg-primary transition-all duration-300"
+            >
+              <span className="underline decoration-dashed underline-offset-4 group-hover:no-underline group-hover:text-background">
+                View all
+              </span>
+              <FaArrowRightLong className="transition-transform duration-300 group-hover:translate-x-1 group-hover:text-background" />
+            </Link>
+          </div>
 
           <div className="grid grid-cols-2 gap-5">
             <div className="group w-full max-w-lg rounded-xl border-2 border-border hover:border-primary  overflow-hidden cursor-pointer bg-muted ">
