@@ -140,7 +140,7 @@ export default function Home() {
           </div>
         </section>
         <section className="">
-          <div className="grid grid-cols-3 justify-center gap-5">
+          <div className="grid grid-cols-3 gap-3 justify-center">
             <div className="grid grid-cols-1 gap-2">
               <div className="border-border bg-muted shadow-lg border rounded-xl p-4">
                 <h3 className="text-primary mb-3 flex items-center gap-2 text-sm font-semibold">
@@ -152,7 +152,7 @@ export default function Home() {
                 </p>
                 <Link
                   href="/contact"
-                  className="flex justify-center bg-primary font-semibold text-sm border-primary border p-1 rounded-md text-background"
+                  className="flex justify-center bg-primary font-semibold text-sm border-primary border p-1 mx-3 rounded-md text-background hover:scale-105 transition-all duration-100"
                 >
                   Get in Touch
                 </Link>
@@ -165,9 +165,9 @@ export default function Home() {
                 <p className="text-sm text-muted-foreground mb-4">Who I am.</p>
                 <Link
                   href="/contact"
-                  className="flex justify-center bg-primary font-semibold text-sm border-primary border p-1 rounded-md text-background"
+                  className="flex justify-center bg-primary font-semibold text-sm border-primary border p-1 mx-3 rounded-md text-background hover:scale-105 transition-all duration-100"
                 >
-                  More About Me
+                  More About M
                 </Link>
               </div>
             </div>
