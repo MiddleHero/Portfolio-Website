@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "leaflet/dist/leaflet.css";
+
 import Navbar from "@/components/navbar";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -25,7 +25,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${inter.className} h-full antialiased`}
     >
-      <body>
+      <body suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
