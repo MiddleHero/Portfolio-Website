@@ -167,7 +167,7 @@ export default function Home() {
                   href="/contact"
                   className="flex justify-center bg-primary font-semibold text-sm border-primary border p-1 mx-3 rounded-md text-background hover:scale-105 transition-all duration-100"
                 >
-                  More About M
+                  More About Me
                 </Link>
               </div>
             </div>
