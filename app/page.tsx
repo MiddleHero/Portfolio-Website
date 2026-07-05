@@ -1,11 +1,27 @@
+"use client";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaSpotify, FaYoutube } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaSpotify,
+  FaYoutube,
+  FaCalendarDay,
+  FaMapMarkedAlt,
+} from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { CiStar } from "react-icons/ci";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Type from "@/components/type";
+
+import dynamic from "next/dynamic";
+import { IoPerson } from "react-icons/io5";
+
+const Map = dynamic(() => import("@/components/leafletmap"), {
+  ssr: false,
+});
+
 export default function Home() {
   return (
     <div className="flex-1 px-0 py-7 md:px-5">
@@ -120,6 +136,50 @@ export default function Home() {
                   PostgreSQL.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+        <section className="">
+          <div className="grid grid-cols-3 justify-center gap-5">
+            <div className="grid grid-cols-1 gap-2">
+              <div className="border-border bg-muted shadow-lg border rounded-xl p-4">
+                <h3 className="text-primary mb-3 flex items-center gap-2 text-sm font-semibold">
+                  <FaCalendarDay />
+                  Let's Connect
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  I'm always open to discuss interesting projects.
+                </p>
+                <Link
+                  href="/contact"
+                  className="flex justify-center bg-primary font-semibold text-sm border-primary border p-1 rounded-md text-background"
+                >
+                  Get in Touch
+                </Link>
+              </div>
+              <div className="border-border bg-muted shadow-lg border rounded-xl p-4">
+                <h3 className="text-primary mb-3 flex items-center gap-2 text-sm font-semibold">
+                  <IoPerson />
+                  Want To Know More About Me?
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4">Who I am.</p>
+                <Link
+                  href="/contact"
+                  className="flex justify-center bg-primary font-semibold text-sm border-primary border p-1 rounded-md text-background"
+                >
+                  More About Me
+                </Link>
+              </div>
+            </div>
+
+            <div className="border-border bg-muted shadow-lg border rounded-xl p-4">
+              <h3 className="flex items-center gap-2 text-md mb-2">
+                <FaMapMarkedAlt /> Currently Based In
+              </h3>
+              <Map />
+              <p className="text-sm text-muted-foreground mt-2">
+                New Orleans, Louisiana
+              </p>
             </div>
           </div>
         </section>
