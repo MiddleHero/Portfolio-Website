@@ -1,27 +1,18 @@
-"use client";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import { FaGithub, FaLinkedin, FaSpotify, FaYoutube } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { CiStar } from "react-icons/ci";
-import { Typewriter } from "react-simple-typewriter";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Type from "@/components/type";
 export default function Home() {
   return (
     <div className="flex-1 px-0 py-7 md:px-5">
       <div className="mx-auto max-w-5xl space-y-10 md:px-4 md:py-12">
         <section className="container space-y-5">
           <h1 className="text-3xl font-semibold">
-            <Typewriter
-              words={["Hey, Im Tadian Dang!"]}
-              loop={1}
-              cursor={true}
-              cursorStyle="|"
-              typeSpeed={50}
-              deleteSpeed={50}
-              delaySpeed={0}
-            />
+            <Type text="Hi, I'm Tadian Dang" />
           </h1>
           <p className="text-lg max-w-2xl text-secondary ">
             I'm an aspiring Software Engineer based @ New Orleans, Louisiana,
