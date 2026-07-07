@@ -11,3 +11,9 @@ Add Cal.com Widget
 
 Ideas:
 Find Me @ Locaitons
+
+Made With:
+ShadCn
+Nextjs
+Leaflet
+React Typewriter
