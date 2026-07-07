@@ -4,6 +4,7 @@ export default function About() {
       <div>About</div>
       <div>Timeline</div>
       <div>Hobbies</div>
+      <div>Music I Like</div>
     </div>
   );
 }

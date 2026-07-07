@@ -108,7 +108,7 @@ export default function Home() {
               />
 
               <div className="px-5 py-3 space-y-2 transition-colors duration-300 group-hover:text-primary">
-                <h1 className="text-xl font-semibold text-muted-foreground group-hover:text-primary">
+                <h1 className="text-xl font-semibold text-primary group-hover:text-primary">
                   Portfolio Project 1
                 </h1>
                 <p className="text-secondary">
@@ -128,7 +128,7 @@ export default function Home() {
               />
 
               <div className="px-5 py-3 space-y-2 transition-colors duration-300 group-hover:text-primary">
-                <h1 className="text-xl font-semibold text-muted-foreground group-hover:text-primary">
+                <h1 className="text-xl font-semibold text-primary group-hover:text-primary">
                   Portfolio Project 2
                 </h1>
                 <p className="text-secondary">
@@ -147,7 +147,7 @@ export default function Home() {
                   <FaCalendarDay />
                   Let's Connect
                 </h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <p className="text-sm text-secondary mb-4">
                   I'm always open to discuss interesting projects.
                 </p>
                 <Link
@@ -162,7 +162,7 @@ export default function Home() {
                   <IoPerson />
                   Want To Know More About Me?
                 </h3>
-                <p className="text-sm text-muted-foreground mb-4">Who I am.</p>
+                <p className="text-sm text-secondary mb-4">Who I am.</p>
                 <Link
                   href="/contact"
                   className="flex justify-center bg-primary font-semibold text-sm border-primary border p-1 mx-3 rounded-md text-background hover:scale-105 transition-all duration-100"
@@ -177,7 +177,7 @@ export default function Home() {
                 <FaMapMarkedAlt /> Currently Based In
               </h3>
               <Map />
-              <p className="text-sm text-muted-foreground mt-2">
+              <p className="text-sm text-secondary mt-2">
                 New Orleans, Louisiana
               </p>
             </div>
