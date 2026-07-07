@@ -1,11 +1,7 @@
 Portfolio Website:
-A Place Where I Can Showcase My Projects as well as information about myseslf.
-
-Made Using Nextjs and Shadcn
+A Place Where I Can Showcase My Projects And Myseslf.
 
 To Do List:
-Add Animations
-Add Project Cards
 Add Spotify Widgets
 Add Cal.com Widget
 
